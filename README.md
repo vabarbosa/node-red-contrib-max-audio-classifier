@@ -5,6 +5,13 @@ Node-RED node for audio-classifier
 
 An API for serving models
 
+Note
+----
+
+To use this node effectively, you'll need a running instance of the (Audio Classifier)[https://developer.ibm.com/exchanges/models/all/max-audio-classifier/] model 
+from the (Model Asset eXchange)[https://developer.ibm.com/exchanges/models/]. Get started with this and other free, open-source deep learning models at (this link)[https://developer.ibm.com/exchanges/models/]
+
+
 Install
 -------
 
