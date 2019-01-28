@@ -25,7 +25,7 @@ module.exports = function (RED) {
 
                 result = client.get_metadata(parameters);
             }
-
+            /* Modified example code BEGINS here */
             if (node.method === 'predict') {
                 var parameters = [], nodeParam, nodeParamType;
 
@@ -35,7 +35,7 @@ module.exports = function (RED) {
                 
                 result = client.predict(parameters);
             }
-
+            /* Modified example code ENDS here */
             if (!errorFlag) {
                 node.status({ fill: "blue", shape: "dot", text: "ModelAssetExchangeServer.status.requesting" });
                 result.then(function (response) {

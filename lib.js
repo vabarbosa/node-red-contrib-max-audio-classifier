@@ -45,6 +45,7 @@ var ModelAssetExchangeServer = (function(){
      * @param {object} deferred - promise object
      */
     ModelAssetExchangeServer.prototype.request = function(method, url, parameters, body, headers, queryParameters, form, deferred){
+        /* Modified example code BEGINS here */
         var req = {
             method: method,
             uri: url,
@@ -54,6 +55,7 @@ var ModelAssetExchangeServer = (function(){
         if(Object.keys(form).length > 0) {
             req.formData = { audio: { value: form.audio, options: { filename: 'audio.wav' }}};
         }
+        /* Modified example code ENDS here */
         if(typeof(body) === 'object' && !(body instanceof Buffer)) {
             req.json = true;
         }
