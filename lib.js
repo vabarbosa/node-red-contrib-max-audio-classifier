@@ -51,9 +51,17 @@ var ModelAssetExchangeServer = (function(){
             uri: url,
             qs: queryParameters,
             headers: headers
+            // First, the default 'body' parameter is removed
         };
         if(Object.keys(form).length > 0) {
-            req.formData = { audio: { value: form.audio, options: { filename: 'audio.wav' }}};
+            // Then, the form data for our request is built 
+            // according to the captured OpenAPI specification
+            req.formData = { 
+                audio: { 
+                    value: form.audio, 
+                    options: { filename: 'audio.wav' }
+                }
+            };  
         }
         /* Modified example code ENDS here */
         if(typeof(body) === 'object' && !(body instanceof Buffer)) {

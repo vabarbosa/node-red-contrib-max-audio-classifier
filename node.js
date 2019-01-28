@@ -31,7 +31,7 @@ module.exports = function (RED) {
 
                 nodeParam = node.predict_audio;
                 nodeParamType = node.predict_audioType;
-                parameters.audio = msg.payload;
+                parameters.audio = msg.payload;     // the input payload is assigned to 'audio' in our request params 
                 
                 result = client.predict(parameters);
             }
