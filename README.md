@@ -42,7 +42,7 @@ Since this node acts essentially as a wrapper around the MAX Audio Classifier mo
 <h3>Outputs:</h3>
 <dl class="message-properties">
     <dt>payload <span class="property-type">object</span></dt>
-    <dd>Prediction.</dd>
+    <dd>Returns the metadata associated with the model.</dd>
 </dl>
 
 <img src="./assets/predict.png">
