@@ -32,7 +32,7 @@
                     typeField: $("#node-input-predict_audioType"),
                     types: ['str', 'msg']
                 });
-                $("#method-select").hide();                     // Modified to hide 'method-select' element (from line 86)
+                
                 $("#predict_audio").hide();
 
                 $("#optional-parameters").hide();
@@ -83,7 +83,7 @@
         <input type="text" id="node-input-service">
     </div>
 
-    <div class="form-row" id="method-select">   <!-- the id 'method-select' was added to hide this div on line 35 -->
+    <div class="form-row">
         <label for="node-input-method"><i class="icon-tasks"></i> <span data-i18n="ModelAssetExchangeServer.label.method"></span></label>
         <select id="node-input-method">
             <option value="get_metadata" data-i18n="ModelAssetExchangeServer.parameters.get_metadata"></option>
