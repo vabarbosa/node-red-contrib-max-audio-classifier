@@ -60,7 +60,7 @@ Since this node acts essentially as a wrapper around the MAX Audio Classifier mo
 
 </html>
 
-Visit [this link](https://flows.nodered.org/flow/cd64d4bb78a7984f15b3cfa5ac97ae55) at the Node-RED Library for an example flow that uses this node in a typical way. In it, you can identify sounds in audio WAV files or through captured audio from your computer's microphone. The clip below shows a file being sent to the model, with the prediction appearing in the Node-RED debug console on the right-hand side of the screen.  
+Visit [this link](https://flows.nodered.org/flow/cd64d4bb78a7984f15b3cfa5ac97ae55) at the Node-RED Library for an example flow that uses this node in a typical way. In it, you can identify sounds in audio WAV files or through captured audio from your computer's microphone. The clip below shows a file (included in the `assets/` directory) being sent to the model, followed by the prediction appearing in the Node-RED debug console on the right-hand side of the screen.  
 
 ![Example Node-RED Flow](./assets/animated-audio-demo.gif)
 
