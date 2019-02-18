@@ -141,10 +141,10 @@
     RED.nodes.registerType('audio-classifier-service', {
         category: 'config',
         defaults: {
-            host: { value: "", required: true },
+            host: { value: "https://max-audio-classifier.max.us-south.containers.appdomain.cloud", required: true },
 
 
-            name: { value: "" },
+            name: { value: "cloud" },
         },
         credentials: {
             temp: { type:"text" }
@@ -160,7 +160,7 @@
 <script type="text/x-red" data-template-name="audio-classifier-service">
     <div class="form-row">
         <label for="node-config-input-host"><i class="fa fa-globe"></i> <span data-i18n="ModelAssetExchangeServer.label.host"></span></label>
-        <input type="text" id="node-config-input-host" placeholder="http://localhost:1880">
+        <input type="text" id="node-config-input-host" placeholder="http://localhost:5000">
     </div>
 
 
@@ -171,6 +171,13 @@
 </script>
 
 <script type="text/x-red" data-help-name="audio-classifier-service">
-    <p><b>Host</b>: URL to connect</p>
-
+    <p>You can set URL to access Audio Classifier container on cloud or localhost.</p>
+    <h3>cloud</h3>
+        <p><b>Host</b>: https://max-audio-classifier.max.us-south.containers.appdomain.cloud</p>
+        <p><b>Name</b>: cloud</p>
+    <h3>localhost</h3>
+        <p><b>Host</b>: http://localhost:5000</p>
+        <p><b>Name</b>: localhost</p>
+        <p>Note: Deploy Audio Classifier container before using this node.</p>
+        <pre>docker run -it -p 5000:5000 codait/max-audio-classifier</pre>
 </script>
